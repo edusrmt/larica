@@ -1,9 +1,11 @@
 import React from 'react';
+import BodyResult from '../../components/bodyresult';
 
-import { Container } from './styles';
 
 function Home() {
-  return <Container></Container>;
+  return <BodyResult>
+    <div style={{height:300}}>ASUEHAUEHASU EHUAS EHA</div>
+  </BodyResult>
 }
 
 export default Home;
