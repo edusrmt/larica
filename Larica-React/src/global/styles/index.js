@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-
+import BackgroundImage  from '../../assets/background/background.jpeg';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
   *{
     margin:0;
     padding:0;
@@ -10,13 +10,14 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   body{
+    background: url(${BackgroundImage}) no-repeat center top;
     -webkit-font-smoothing: antialiased !important;
+    background-size: cover;
   }
   body,input,button{
-    font:14px Roboto, sans-serif;
+    font:14px Montserrat, sans-serif;
   }
   #root{
-    max-width:1020px;
     margin:0 auto;
     padding:0 20px 50px;
   }
