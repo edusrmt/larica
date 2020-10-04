@@ -26,4 +26,11 @@ export const Content = styled.div`
   -webkit-box-shadow: 0px -5px 15px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px -5px 15px -4px rgba(0,0,0,0.75);
   box-shadow: 0px -5px 15px -4px rgba(0,0,0,0.75);
+
+  h2 {
+    color: #58B76C;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
 `;
