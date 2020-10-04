@@ -1,20 +1,18 @@
 <template>
-  <div class="hello">
-    <h1>Hellow</h1>
-  </div>
+  <BodyContent/>
+
+
 </template>
 
 <script>
 
-export default {
-  name: 'Home',
-  components: {
-    // header,
+  import BodyContent from '../../components/bodycontent';
+  export default {
+    name: 'App',
+    components: {
+      BodyContent
+    }
   }
-}
+
 </script>
 
-
-<style >
-
-</style>
