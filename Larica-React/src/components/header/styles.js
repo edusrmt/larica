@@ -5,10 +5,13 @@ import { Link } from 'react-router-dom';
 export const Container = styled.header`
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: space-between;
+
   background-color:#fff;
-  height:60px;
-  width:100%;
+  height: 60px;
+  width: 100%;
+  padding: 0 5vw;
+
   -webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.3);
@@ -18,6 +21,7 @@ export const TextLogo = styled.h1`
   color:#58B76C;
   font-size:38px;
   font-weight:bold;
+  font-family: 'Berkshire Swash', cursive;
 
 `
 export const CustomButton = styled(Link)`
@@ -40,3 +44,7 @@ export const CustomButton = styled(Link)`
    }
 
 `
+
+export const ExternalContainer = styled.div`
+  flex: 1;
+`;
