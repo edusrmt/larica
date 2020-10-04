@@ -1,21 +1,3 @@
 <template>
-  <div class="hello">
-    <h1>Hellow</h1>
-  </div>
+  <h1>Home Page</h1>
 </template>
-
-<script>
-
-export default {
-  name: 'Home',
-  components: {
-    // header,
-  }
-
-}
-</script>
-
-
-<style >
-
-</style>
