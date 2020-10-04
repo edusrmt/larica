@@ -1,12 +1,18 @@
 <template>
   <div class="background">
-    <div class="content"><h2>teste</h2></div>
+    <div class="content">
+      <h2>{{title}}</h2>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
     name: 'BodyContent',
+    props: {
+      title:String
+    }
   }
 </script>
 

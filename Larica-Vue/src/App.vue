@@ -6,7 +6,6 @@
 </template>
 
 <style scoped>
-
   #app {
     min-height: 100vh; 
     font-family: Avenir, Helvetica, Arial, sans-serif;

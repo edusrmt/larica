@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     <h1 class="textLogo">Larica</h1>
-    <button><span>Meus ingredientes</span></button>
+    <button>
+      <span>Meus ingredientes</span>
+    </button>
   </div>
 </template>
 
