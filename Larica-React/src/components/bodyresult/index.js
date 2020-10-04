@@ -1,9 +1,15 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Content } from './styles';
 
-function bodyresult({children}) {
-  return <Container>{children}</Container>;
+function bodyresult({children, bgImage}) {
+  return (
+    <Container bgImage={bgImage}>
+      <Content>
+        {children}
+      </Content>
+    </Container>
+  );
 }
 
 export default bodyresult;

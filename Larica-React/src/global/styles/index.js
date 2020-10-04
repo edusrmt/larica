@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import BackgroundImage  from '../../assets/background/background.jpeg';
 
 export default createGlobalStyle`
   * {
@@ -10,9 +9,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: url(${BackgroundImage}) no-repeat center top;
-    -webkit-font-smoothing: antialiased !important;
-    background-size: cover;
+    -webkit-font-smoothing: antialiased !important;    
   }
 
   body, input, button {
