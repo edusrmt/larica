@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: 20%;
+export const Container = styled.li`
   cursor: pointer;
-
   img {
     width: 100%;
     height: 200px;
