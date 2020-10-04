@@ -2,7 +2,7 @@
 // import Vue from 'vue';
 // import Home from '../src/Pages/Home';
 
-// // Vue.use(VueRouter)
+// Vue.use(VueRouter)
 
 // export const router = new VueRouter({
 //   mode: 'history',

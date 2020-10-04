@@ -1,15 +1,21 @@
 <template>
   <div id="app">
   <Header/>
+  <Body/>
+  <RecipeList/>
   </div>
 </template>
 
 <script>
 import Header from './components/header/header';
+import Body from './components/bodycontent/bodycontent';
+import RecipeList from './components/recipelist/recipelist';
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Body,
+    RecipeList
   }
 }
 </script>
