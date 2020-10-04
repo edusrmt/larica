@@ -9,12 +9,13 @@
 <script>
   export default {
     name: 'recipecard',
-    props: ['recipe'],
+    props: ['recipe','setTitle'],
     data() {
       return {
         title: this.recipe.title,
         ingredients: this.recipe.ingredients,
-        thumbnail: this.recipe.thumbnail
+        thumbnail: this.recipe.thumbnail,
+        updateTitle: this.setTitle,
       }
     }
   }

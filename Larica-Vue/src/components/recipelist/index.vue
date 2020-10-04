@@ -1,6 +1,6 @@
 <template>
   <ul class="listrecipe">
-    <RecipeCard v-for="item in items" :key="item.title" :recipe="item"/>
+    <RecipeCard v-for="item in items" :key="item.title" :recipe="item" v-on:click='setTitle(item.title)'/>
   </ul>
 </template>
 
@@ -10,6 +10,9 @@
     name: 'recipelist',
     components:{
       RecipeCard
+    },
+    props:{
+      setTitle: Function,
     },
     data: function() {
       return {
@@ -35,7 +38,8 @@
             "ingredients": "eggs, milk, sugar, heavy cream",
             "thumbnail": "http://img.recipepuppy.com/4309.jpg"
           }
-        ]
+        ],
+        updateTitle: this.setTitle,
       };
     } 
   }

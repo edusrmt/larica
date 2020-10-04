@@ -1,7 +1,7 @@
 <template>
   <div class="background">
     <div class="content">
-      <h2>{{title}}</h2>
+      
       <slot></slot>
     </div>
   </div>
@@ -9,10 +9,7 @@
 
 <script>
   export default {
-    name: 'BodyContent',
-    props: {
-      title:String
-    }
+    name: 'BodyContent',    
   }
 </script>
 
