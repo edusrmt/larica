@@ -12,8 +12,7 @@
   .container{
     padding:0;
     margin:0;
-    min-height: 100vh; 
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
