@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  title = 'O que você deseja comer hoje';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  setTitle (newTitle: string) {
+    this.title = newTitle;
+  }
 }

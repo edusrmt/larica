@@ -2,17 +2,11 @@ html {
   min-height: 100vh;
 }
 
-* {
-  margin:0;
-  padding:0;
-  outline:0;
-}
-
 body {
   -webkit-font-smoothing: antialiased !important;    
 }
 
-body, input, button {
+::ng-deep body, input, button {
   font: 14px Montserrat, sans-serif;
 }
 
