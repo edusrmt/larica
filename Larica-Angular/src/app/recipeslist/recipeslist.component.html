@@ -1,3 +1,3 @@
 <ul>
-  <app-recipecard *ngFor="let recipe of recipes" [recipe]="recipe" (click)="setTitle(recipe.title)"></app-recipecard>
+  <app-recipecard *ngFor="let recipe of recipes" [recipe]="recipe" (click)="emitTitle(recipe.title)"></app-recipecard>
 </ul>

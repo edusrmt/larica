@@ -15,7 +15,6 @@ interface Recipe {
 
 export class RecipecardComponent implements OnInit {
   @Input() recipe: Recipe;
-  @Input() setTitle;
 
   title;
   ingredients;

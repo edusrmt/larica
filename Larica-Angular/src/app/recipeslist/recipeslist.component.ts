@@ -33,7 +33,7 @@ export class RecipeslistComponent implements OnInit {
 
   @Output() onInteraction = new EventEmitter<string>();
 
-  setTitle(newVal) {
+  emitTitle(newVal) {
     this.onInteraction.emit(newVal);
   }
 
