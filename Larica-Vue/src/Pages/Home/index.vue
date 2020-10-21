@@ -18,10 +18,12 @@
     },
     setup(){
       let state = reactive({title:'O que você deseja comer hoje'})
+
       function setTitle(newTitle){
         state.title = newTitle;
       }
-      return {state,setTitle};
+
+      return {state, setTitle};
     }
   }
 </script>

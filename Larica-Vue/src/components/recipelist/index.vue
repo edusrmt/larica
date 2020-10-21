@@ -38,8 +38,7 @@
             "ingredients": "eggs, milk, sugar, heavy cream",
             "thumbnail": "http://img.recipepuppy.com/4309.jpg"
           }
-        ],
-        updateTitle: this.setTitle,
+        ]
       };
     } 
   }
