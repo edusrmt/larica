@@ -5,8 +5,8 @@ import { Container, TextLogo,CustomButton} from './styles';
 function header() {
   return (
     <Container>
-      <TextLogo>Larica</TextLogo>
-      <CustomButton>
+      <TextLogo to="/">Larica</TextLogo>
+      <CustomButton to="/ingredients">
         <button>
           <span>Meus ingredientes</span>
         </button>

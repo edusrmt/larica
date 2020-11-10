@@ -21,12 +21,12 @@ export const Container = styled.header`
   box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.3);
 `;
 
-export const TextLogo = styled.h1`
+export const TextLogo = styled(Link)`
   color:#58B76C;
   font-size:38px;
   font-weight:bold;
   font-family: 'Berkshire Swash', cursive;
-
+  text-decoration: none;
 `
 export const CustomButton = styled(Link)`
   text-decoration: none;
