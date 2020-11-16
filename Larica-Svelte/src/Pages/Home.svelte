@@ -4,8 +4,8 @@
 </BodyContent>
   
 <script>
-  import BodyContent from '../../components/bodycontent/bodycontent.svelte';
-  import RecipeList from '../../components/recipelist/recipelist.svelte';
+  import BodyContent from '../components/bodycontent/bodycontent.svelte';
+  import RecipeList from '../components/recipelist/recipelist.svelte';
   import {title} from './store';
   let titleSelected;
   const unsubscribe = title.subscribe(value => {

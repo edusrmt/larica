@@ -8,7 +8,7 @@
 
 
 <script>
-  import {title} from '../../Pages/Home/store';
+  import {title} from '../../Pages/store';
   function setTitle(newTitle){
     title.set(newTitle);
   }

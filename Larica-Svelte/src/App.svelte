@@ -1,11 +1,17 @@
 <main class="container">
   <HeaderContent/>
-  <Home/>
+  <Router url="{url}">
+    <Route path="ingredients" component="{Ingredients}" /> 
+    <Route path="/"><Home /></Route>
+  </Router>
 </main>
 
 <script>
+  import { Router, Route } from "svelte-routing";
   import HeaderContent from './components/header/Header.svelte';
-  import Home from './Pages/Home/Home.svelte';
+  import Home from './Pages/Home.svelte';
+  import Ingredients from './Pages/Ingredients.svelte';
+  export let url = "";
 </script>
 
 <style>
