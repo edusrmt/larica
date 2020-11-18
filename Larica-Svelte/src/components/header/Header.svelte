@@ -1,13 +1,18 @@
 <div class="header">
-  <h1 class="textLogo">Larica</h1>
-  <button>
-    <span>Meus ingredientes</span>
-  </button>
+  <Router>
+    <Link to="/">
+      <h1 class="textLogo">Larica</h1>  
+    </Link>
+    <Link to="ingredients">
+      <button>
+        <span>Meus ingredientes</span>
+      </button>
+    </Link>
+  </Router>
 </div>
 
-
 <script>
-  
+  import { Router, Link } from "svelte-routing";  
 </script>
 
 <style>
@@ -30,6 +35,7 @@
   font-size:38px;
   font-weight:bold;
   font-family: 'Berkshire Swash', cursive;
+  text-decoration: none;
 }
 button{
     cursor:pointer;
