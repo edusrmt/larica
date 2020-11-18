@@ -1,7 +1,8 @@
+
 <template>
   <div class="header">
-    <h1 class="textLogo">Larica</h1>
-    <button>
+    <h1 class="textLogo" @click="navigateIngredients('/')">Larica</h1>
+    <button @click="navigateIngredients('ingredients')">
       <span>Meus ingredientes</span>
     </button>
   </div>
@@ -9,8 +10,14 @@
 
 <script>
   export default {
-    name: 'headerContent'
+    name: 'headerContent',
+    methods: {
+    navigateIngredients (navigationPath){
+       this.$router.push(navigationPath);
+    }
   }
+  }
+  
 </script>
 
 <style>
@@ -33,6 +40,9 @@
   font-size:38px;
   font-weight:bold;
   font-family: 'Berkshire Swash', cursive;
+}
+.textLogo:hover{
+  cursor:pointer
 }
 button{
     cursor:pointer;

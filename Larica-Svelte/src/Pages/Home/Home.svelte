@@ -11,7 +11,6 @@
   const unsubscribe = title.subscribe(value => {
     titleSelected = value;
   });
-
 </script>
 
 <style>

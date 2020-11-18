@@ -14,7 +14,8 @@
   }
 
   import RecipeCard from '../recipecard/recipecard.svelte';
-  let recipes = [
+  
+  const recipes = [
           {
             "title": "Chip-Oat-Nut Cookies",
             "ingredients": "semisweet chocolate chips, eggs, flour, sugar, milk, oats, oil, walnut",

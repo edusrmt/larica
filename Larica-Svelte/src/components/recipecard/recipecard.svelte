@@ -1,4 +1,3 @@
-
 <li>
   <img src={thumbnail} alt={title} />
   <h3>{ title }</h3>
