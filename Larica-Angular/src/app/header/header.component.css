@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   position: fixed;
   top: 0;
   left: 0;
@@ -22,6 +22,7 @@ h1 {
   font-size:38px;
   font-weight:bold;
   font-family: 'Berkshire Swash', cursive;
+  cursor:pointer;
 }
 
 a {
@@ -38,9 +39,11 @@ button{
   border-radius:30px;
   border:0;
   padding:10px 20px;
+  cursor: pointer;
 }
 span{
   color:#fff;
   font-weight:bold;
   font-size:16px;
+
 }

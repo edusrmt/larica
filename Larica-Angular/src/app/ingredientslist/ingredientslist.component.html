@@ -1,0 +1,11 @@
+<ul>
+  <app-ingredientcard *ngFor="let ingredient of myIngredients" [ingredient]="ingredient" (onInteraction)="removeIngredient($event)"></app-ingredientcard>
+  <li>
+    <button (click)="addIngredient(newIngredient.value)">
+      <img src="../../assets/icons/plus.svg" alt="adicionar ingrediente"/>
+    </button>
+    <input #newIngredient type="text" (keyup.enter)="addIngredient(newIngredient.value); newIngredient.value='' " (blur)="addIngredient(newIngredient.value); newIngredient.value='' " placeholder="Adicionar" />
+  </li>
+</ul>
+
+

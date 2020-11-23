@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { BodycontentComponent } from './bodycontent/bodycontent.component';
 import { RecipeslistComponent } from './recipeslist/recipeslist.component';
 import { RecipecardComponent } from './recipecard/recipecard.component';
+import { IngredientsComponent } from './ingredients/ingredients.component';
+import { IngredientcardComponent } from './ingredientcard/ingredientcard.component';
+import { IngredientslistComponent } from './ingredientslist/ingredientslist.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { RecipecardComponent } from './recipecard/recipecard.component';
     HeaderComponent,
     BodycontentComponent,
     RecipeslistComponent,
-    RecipecardComponent
+    RecipecardComponent,
+    IngredientsComponent,
+    IngredientcardComponent,
+    IngredientslistComponent
   ],
   imports: [
     BrowserModule,

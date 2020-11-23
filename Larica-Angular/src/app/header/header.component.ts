@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  router;
 
-  constructor() { }
+  constructor(router: Router) {
+    this.router = router;
+  }
 
   ngOnInit(): void {
+  }
+
+
+  public goToMenu(){
+    this.router.navigate(['']);
+  }
+  public goToIngredientsPage (){
+    this.router.navigate(['/','ingredients']);
   }
 
 }
