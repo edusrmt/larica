@@ -19,7 +19,7 @@ function RecipesListClickable () {
     {
       recipes.map(recipe => <RecipeCardClickable key={recipe.title} recipe={recipe}/>)
     }
-  </Container> : <h3 style={{color:'#999'}}>Nenhuma receita disponível para essa busca...</h3>}
+  </Container> : null}
 </>
   );
 }
