@@ -56,3 +56,24 @@ export const Container = styled.ul`
     }
   }
 `;
+export const SearchButton = styled.button`
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 30px;
+  border:none;
+  padding:10px;
+  background-color: ${props => props.disable ? '#bff5db' : '#559F64'};
+  justify-content:space-between;
+  align-items:center;
+  display:flex;
+  flex-direction:row;
+  color:white;
+  font-weight:bold;
+  img {
+      width: 1.5rem;
+  }
+`
+;
