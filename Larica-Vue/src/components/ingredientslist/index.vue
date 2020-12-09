@@ -2,7 +2,7 @@
   <ul>
     <IngredientCard v-for="item in stateIngredients.ingredients" :key="item" :ingredientName="item" :remove='removeIngredient'/>
     <li className="add">
-      <button className="buttonAdd" v-on:click='setIngredients(message)'>
+      <button className="buttonAdd" v-on:click='setIngredients(message)' @click="clearMessage">
         <img :src="Plus" alt="adicionar ingrediente"/>
       </button>
       <input type="text" placeholder="Adicionar" v-model="message"/>
@@ -25,11 +25,16 @@
       return { Plus:Plus,
       message: ""};
     },
+    methods: {
+    clearMessage() {
+      this.message = "";
+    },
+    },
     setup(){
       let stateIngredients = reactive({ingredients:[]});
 
       function setIngredients(newIngredient){
-        if(newIngredient){
+        if(newIngredient.trim().length > 0){
           stateIngredients.ingredients.push(newIngredient);
         }
       }
