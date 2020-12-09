@@ -14,7 +14,7 @@ export class IngredientslistComponent implements OnInit {
   ngOnInit(): void {
   }
   addIngredient(value: String){
-    if(value){
+    if(value.trim().length > 0){
       this.myIngredients.push(value);
     }
   }
